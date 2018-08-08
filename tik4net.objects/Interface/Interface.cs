@@ -52,6 +52,18 @@ namespace tik4net.Objects.Interface
         /// </summary>
         [TikProperty("fast-path")]
         public bool FastPath { get; set; }
+        
+        /// <summary>
+        /// rx-byte
+        /// </summary>
+        [TikProperty("rx", IsReadOnly = true)]
+        public long Rx { get; private set; }
+
+        /// <summary>
+        /// tx-byte
+        /// </summary>
+        [TikProperty("tx", IsReadOnly = true)]
+        public long Tx { get; private set; }
 
         /// <summary>
         /// rx-byte
